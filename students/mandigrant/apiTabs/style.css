@@ -1,0 +1,47 @@
+html {
+	font-family: 'Oswald', sans-serif;
+	font-weight:lighter;
+	background-color:#E0F5FF;
+}
+
+ul {
+	padding-left:0px;
+}
+
+ul li { 
+	display:inline;
+	list-style-type:none;
+	padding:0;
+}
+
+.wrapper {
+	width:50%;
+	margin:0 auto;
+}
+
+.tab { 
+	background-color:white;
+	padding:10px;
+	margin-right:5px;
+	border-radius:6px;
+	font-weight:normal;
+}
+
+.selected {
+	color:white;
+	background-color:red;
+}
+
+.tab:hover {
+	cursor:pointer;
+	color:white;
+	background-color:red;
+}
+
+.content {
+	width:100%;
+	height:300px;
+	background-color:white;
+	padding:10px;
+	border-radius:6px;
+}
