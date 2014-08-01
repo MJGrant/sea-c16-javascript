@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="angularTabApp">
+	<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <script src="controllers.js"></script>
+        <title>MJGrant Angular Tabs</title>
+	</head>
+
+	<body ng-controller="TabsCtrl">
+		<h1>AngularJS Hipster Tabs</h1>
+		<div class="wrapper">
+			<ul class="tabs"">
+                <li ng-repeat="tab in tabs" class="tab" id="{{tab.name}}" ng-click="showTab(tab)">{{tab.name}}</li>
+			</ul>
+			<div class="content">{{activeTab.content}}</div>
+		</div>
+	</body>
+</html>
